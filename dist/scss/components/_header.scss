@@ -163,6 +163,7 @@
 
             &.open {
                 transform: translate(0);
+                overflow: auto;
             }
         }
 
