@@ -89,9 +89,9 @@
         }
     }
 
-    // @media screen and (max-width: $breakpoint_md) {
-    //     &__background {
-    //         background-position: top center;
-    //     }
-    // }
+    @media screen and (max-width: $breakpoint_md) {
+        &__background {
+            background-position: top center;
+        }
+    }
 }
