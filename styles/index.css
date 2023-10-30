@@ -580,15 +580,6 @@ main {
   .header__logo-text.open {
     text-align: start;
   }
-  .header__menu {
-    top: 50%;
-  }
-  .header__blog-link {
-    top: 80%;
-  }
-  .header__social-list {
-    top: 90%;
-  }
   .header__burger-menu.open {
     width: 200px;
   }
