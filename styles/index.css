@@ -519,7 +519,7 @@ main {
   .header__menu {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 300px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -538,7 +538,7 @@ main {
   }
   .header__blog-link {
     position: absolute;
-    top: 70%;
+    top: 480px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -546,7 +546,7 @@ main {
   }
   .header__social-list {
     position: absolute;
-    top: 85%;
+    top: 550px;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
