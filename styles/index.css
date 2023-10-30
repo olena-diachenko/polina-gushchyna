@@ -514,6 +514,7 @@ main {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
             transform: translate(0);
+    overflow: auto;
   }
   .header__menu {
     display: block;
