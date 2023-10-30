@@ -1,0 +1,81 @@
+@import "../common/colors";
+@import "../common/breakpoints";
+
+.about {
+    padding: 120px 0 50px;
+    margin-top: -120px;
+
+    &__title-wrap {
+        margin: 0 auto;
+        max-width: 512px;
+        margin-bottom: 60px;    
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__photo-section {
+        margin: 0 60px 30px 0;
+    }
+
+    &__photo {
+        width: 500px;
+        height: 750px;
+    }
+
+    &__box-title {
+        font-size: 20px;
+        line-height: 1.4;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    &__box-line {
+        width: 200px;
+        height: 3px;
+        background-color: $accent-color;
+        margin: 0 auto 30px;
+    }
+
+    &__box-subtitle {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: $breakpoint_md) {
+
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title-wrap {
+            margin-bottom: 50px;
+        }
+
+        &__photo-section {
+            margin: 0 0 30px 0;
+        }
+
+        &__photo {
+            width: 400px;
+            height: 602px;
+        }
+
+        &__box-title {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint_sm) {
+
+        &__photo {
+            width: 350px;
+            height: 527px;
+        }
+    }
+}
