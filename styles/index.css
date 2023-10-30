@@ -396,6 +396,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  overflow: auto;
 }
 .header__menu {
   display: -webkit-box;
@@ -514,7 +515,6 @@ main {
     -webkit-transform: translate(0);
         -ms-transform: translate(0);
             transform: translate(0);
-    overflow: auto;
   }
   .header__menu {
     display: block;
