@@ -3,6 +3,7 @@
 // Burger
 
 const body = document.querySelector("body");
+const header = document.querySelector("header");
 const menu = document.getElementById('header__burger-menu');
 const nav_menu = document.getElementById('header__nav');
 const logo_text = document.getElementById('header__logo-text');
@@ -10,6 +11,7 @@ const logo_text = document.getElementById('header__logo-text');
 const handleClick = (e) => {
   e.stopPropagation();
   if (e.target.nodeName === "NAV") return;
+  header.classList.toggle('open');
   menu.classList.toggle('open');
   if (menu.innerText === 'Главное меню') {
     menu.innerText = 'Меню';
@@ -28,7 +30,6 @@ nav_menu.addEventListener('click', handleClick)
 // Change the header background on scroll
 
 const handlerScroll = () => {
-  const header = document.querySelector("header");
   const toTopIcon = document.getElementById("to-top__wrap");
   const scrollPosition = window.scrollY;
   const scrollThreshold = 5;
@@ -37,7 +38,7 @@ const handlerScroll = () => {
     header.style.backgroundColor = "#0f6865";
     toTopIcon.style.display = "block";
   } else {
-    header.style.backgroundColor = "transparent";
+    header.style.backgroundColor = "";
     toTopIcon.style.display = "none";
   }
 }
