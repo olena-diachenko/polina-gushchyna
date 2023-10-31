@@ -9,12 +9,7 @@ const logo_text = document.getElementById('header__logo-text');
 
 const handleClick = (e) => {
   if (e.target.nodeName === "NAV") return;
-
-  if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
-    e.preventDefault();
-  }
-
-  menu.classList.toggle('open');
+    menu.classList.toggle('open');
   if (menu.innerText === 'Главное меню') {
     menu.innerText = 'Меню';
   } else {
@@ -23,18 +18,10 @@ const handleClick = (e) => {
   nav_menu.classList.toggle('open');
   logo_text.classList.toggle('open');
   body.classList.toggle('lock');
-
-  if (e.target.tagName === 'A' && e.target.getAttribute('href').startsWith('#')) {
-    const targetId = e.target.getAttribute('href').substring(1);
-    const targetElement = document.getElementById(targetId);
-    if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }
 }
 
-menu.addEventListener('click', handleClick);
-nav_menu.addEventListener('click', handleClick)
+menu.addEventListener('click', handleClick, { passive: true });
+nav_menu.addEventListener('click', handleClick, { passive: true })
 
 
 // Change the header background on scroll
