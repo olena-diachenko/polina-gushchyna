@@ -8,8 +8,9 @@ const nav_menu = document.getElementById('header__nav');
 const logo_text = document.getElementById('header__logo-text');
 
 const handleClick = (e) => {
+  e.stopPropagation();
   if (e.target.nodeName === "NAV") return;
-    menu.classList.toggle('open');
+  menu.classList.toggle('open');
   if (menu.innerText === 'Главное меню') {
     menu.innerText = 'Меню';
   } else {
