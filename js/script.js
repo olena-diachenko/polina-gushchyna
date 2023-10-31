@@ -30,7 +30,6 @@ nav_menu.addEventListener('click', handleClick)
 // Change the header background on scroll
 
 const handlerScroll = () => {
-  // const header = document.querySelector("header");
   const toTopIcon = document.getElementById("to-top__wrap");
   const scrollPosition = window.scrollY;
   const scrollThreshold = 5;
