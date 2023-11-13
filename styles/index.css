@@ -738,7 +738,7 @@ main {
   margin-bottom: 16px;
   text-transform: uppercase;
 }
-.services__card-text {
+.services__card-textWrap {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
@@ -746,19 +746,15 @@ main {
   font-size: 14px;
   line-height: 1.4;
   color: #161212;
-  text-align: justify;
   margin-bottom: 16px;
+}
+.services__card-text {
+  margin-bottom: 12px;
 }
 .services__card-price {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.4;
-  color: #161212;
-  margin-bottom: 16px;
-}
-.services__card-notabene {
-  font-style: italic;
-  font-size: 12px;
   color: #161212;
   margin-bottom: 16px;
 }
@@ -800,11 +796,6 @@ main {
   text-transform: uppercase;
   margin-bottom: 30px;
   color: #e48564;
-}
-.services__service-notabene {
-  font-style: italic;
-  font-size: 12px;
-  margin-bottom: 30px;
 }
 .services__service-link {
   display: block;
